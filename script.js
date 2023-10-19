@@ -7,6 +7,9 @@ for (let i = 0; i < 16; i++)
     {
         let square = document.createElement("div");
         square.classList.add("square");
+        square.addEventListener("mouseover", function() {
+            square.style.backgroundColor = "#555";
+        });
         row.appendChild(square);
     }
     row.classList.add("row");
